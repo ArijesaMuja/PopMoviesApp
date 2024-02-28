@@ -6,3 +6,14 @@
 //
 
 import Foundation
+
+class MoviesViewModel: ObservableObject{
+    @Published private(set) var movies: [Movie] = []
+    
+    init(){
+        movies=Movie.all
+    }
+    func addImpression(movie: Movie){
+        movies.append(movie)
+    }
+}
