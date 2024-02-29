@@ -21,11 +21,11 @@ struct TabBar: View {
                 }
             AddImpressionsView()
                 .tabItem{
-                    Label("New", systemImage: "plus")
+                    Label("Impressions", systemImage: "plus")
                 }
             TopMoviesView()
                 .tabItem{
-                    Label("Favorites", systemImage: "heart")
+                    Label("Top Movies", systemImage: "heart")
                 }
         }
     }
