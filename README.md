@@ -26,3 +26,7 @@ The top movies section displays an updated list of the most-watched movies by th
 Editor: XCode 15.0
 Programming language: Swift
 Operating System: MacOS 14.2
+
+### Contributors
+Arijesa Muja
+Agnesa Jashanica
