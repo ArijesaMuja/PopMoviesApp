@@ -9,9 +9,11 @@ import SwiftUI
 
 @main
 struct PopMoviesAppApp: App {
+    @StateObject var moviesViewModel = MoviesViewModel()
+    
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            ContentView().environmentObject(moviesViewModel)
         }
     }
 }
