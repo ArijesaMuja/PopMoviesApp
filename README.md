@@ -28,6 +28,6 @@ The top movies section displays an updated list of the most-watched movies by th
 - Operating System: MacOS 14.2
 
 #### Contributors
-- Arijesa Muja
-- Agnesa Jashanica
+Arijesa Muja<br>
+Agnesa Jashanica<br>
 
