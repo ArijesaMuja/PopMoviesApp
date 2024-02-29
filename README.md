@@ -27,8 +27,7 @@ Editor: XCode 15.0
 Programming language: Swift
 Operating System: MacOS 14.2
 
-### Contributors
+##### Contributors
 Arijesa Muja
-
 Agnesa Jashanica
 
