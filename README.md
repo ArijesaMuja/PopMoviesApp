@@ -1,4 +1,4 @@
-## Pop Movies IOS App
+# Pop Movies IOS App
 Pop Movies is an iOS application designed to browse and discover new movies based on your preferences. 
 With rich content and an attractive user experience, Pop Movies is the perfect choice for exploring the world of cinema.
 
