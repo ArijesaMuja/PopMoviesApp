@@ -23,6 +23,11 @@
 		E27F3EBB2B901E57009BF28C /* MovieModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E27F3EBA2B901E57009BF28C /* MovieModel.swift */; };
 		E27F3EBD2B901E8C009BF28C /* SQLiteCommands.swift in Sources */ = {isa = PBXBuildFile; fileRef = E27F3EBC2B901E8C009BF28C /* SQLiteCommands.swift */; };
 		E27F3EBF2B901EB3009BF28C /* UserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E27F3EBE2B901EB3009BF28C /* UserModel.swift */; };
+		E27F3EC12B902EAB009BF28C /* AddImpressionsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E27F3EC02B902EAB009BF28C /* AddImpressionsView.swift */; };
+		E27F3EC32B902EE9009BF28C /* GenreView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E27F3EC22B902EE9009BF28C /* GenreView.swift */; };
+		E27F3EC52B902F23009BF28C /* MovieView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E27F3EC42B902F23009BF28C /* MovieView.swift */; };
+		E27F3EC72B902F46009BF28C /* MovieCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = E27F3EC62B902F46009BF28C /* MovieCard.swift */; };
+		E27F3EC92B902F75009BF28C /* MovieList.swift in Sources */ = {isa = PBXBuildFile; fileRef = E27F3EC82B902F75009BF28C /* MovieList.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -62,6 +67,11 @@
 		E27F3EBA2B901E57009BF28C /* MovieModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieModel.swift; sourceTree = "<group>"; };
 		E27F3EBC2B901E8C009BF28C /* SQLiteCommands.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SQLiteCommands.swift; sourceTree = "<group>"; };
 		E27F3EBE2B901EB3009BF28C /* UserModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserModel.swift; sourceTree = "<group>"; };
+		E27F3EC02B902EAB009BF28C /* AddImpressionsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddImpressionsView.swift; sourceTree = "<group>"; };
+		E27F3EC22B902EE9009BF28C /* GenreView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenreView.swift; sourceTree = "<group>"; };
+		E27F3EC42B902F23009BF28C /* MovieView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieView.swift; sourceTree = "<group>"; };
+		E27F3EC62B902F46009BF28C /* MovieCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieCard.swift; sourceTree = "<group>"; };
+		E27F3EC82B902F75009BF28C /* MovieList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieList.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -179,6 +189,8 @@
 		E27F3EAB2B901AC2009BF28C /* Components */ = {
 			isa = PBXGroup;
 			children = (
+				E27F3EC62B902F46009BF28C /* MovieCard.swift */,
+				E27F3EC82B902F75009BF28C /* MovieList.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -186,6 +198,9 @@
 		E27F3EAC2B901AD3009BF28C /* Detail */ = {
 			isa = PBXGroup;
 			children = (
+				E27F3EC02B902EAB009BF28C /* AddImpressionsView.swift */,
+				E27F3EC22B902EE9009BF28C /* GenreView.swift */,
+				E27F3EC42B902F23009BF28C /* MovieView.swift */,
 			);
 			path = Detail;
 			sourceTree = "<group>";
@@ -335,10 +350,15 @@
 				E27F3EBB2B901E57009BF28C /* MovieModel.swift in Sources */,
 				E27F3EB32B901B5B009BF28C /* TopMoviesView.swift in Sources */,
 				E27F3EAF2B901B1E009BF28C /* HomeView.swift in Sources */,
+				E27F3EC12B902EAB009BF28C /* AddImpressionsView.swift in Sources */,
+				E27F3EC32B902EE9009BF28C /* GenreView.swift in Sources */,
+				E27F3EC72B902F46009BF28C /* MovieCard.swift in Sources */,
+				E27F3EC92B902F75009BF28C /* MovieList.swift in Sources */,
 				E27F3E812B9012A2009BF28C /* ContentView.swift in Sources */,
 				E27F3EB12B901B3A009BF28C /* AddImpressionsView.swift in Sources */,
 				E27F3EB52B901B7C009BF28C /* GenresView.swift in Sources */,
 				E27F3E7F2B9012A2009BF28C /* PopMoviesAppApp.swift in Sources */,
+				E27F3EC52B902F23009BF28C /* MovieView.swift in Sources */,
 				E27F3EB72B901B9A009BF28C /* TabBar.swift in Sources */,
 				E27F3EB92B901E03009BF28C /* MoviesViewModel.swift in Sources */,
 				E27F3EBD2B901E8C009BF28C /* SQLiteCommands.swift in Sources */,

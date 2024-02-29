@@ -1,8 +1,21 @@
-//
-//  HomeView.swift
-//  PopMoviesApp
-//
-//  Created by arijesa on 28.2.24.
-//
+import SwiftUI
 
-import Foundation
+struct HomeView: View { @EnvironmentObject var moviesVM MoviesViewModel
+    var body: some View {
+        NavigationView{
+            ScrollView{
+                MovieList(movies: moviesVM.movies)
+            }
+            .navigationTitle("Movies")
+        }
+        .navigationViewStyle(.stack)
+    }
+}
+
+struct HomeView_Previews: PreviewProvider {
+    static var previews: some View {
+        HomeView()
+            .environmentObject(MoviesViewModel())
+        
+    }
+}
