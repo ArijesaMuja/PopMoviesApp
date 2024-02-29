@@ -37,7 +37,9 @@ struct AddImpressionView: View {
                     TextEditor(text: $description)
                     
                 }
-                
+                Section(header: Text("Preview")){
+                    TextEditor(text: $preview)
+                } 
             }
             
             .toolbar(content: {
@@ -51,11 +53,11 @@ struct AddImpressionView: View {
                 }
                 ToolbarItem{
                     NavigationLink(isActive: $navigateToGenre) {
-                        GenreView(genre: genresVM.genres.sorted{$0.datePublished>$1.datePublished}[0])
+                        MovieView(movie: moviesVM.movies.sorted{$0.datePublished>$1.datePublished}[0])
                             .navigationBarBackButtonHidden(true)
                     } label:{
                         Button{
-                            savePreview()
+                            saveImpression()
                             navigateToGenre=true
                         } label:{
                             Label("Done", systemImage: "checkmark")
@@ -65,7 +67,7 @@ struct AddImpressionView: View {
                     .disabled(name.isEmpty)
                 }
             })
-            .navigationTitle("Previews")
+            .navigationTitle("Impressions")
             .navigationBarTitleDisplayMode(.inline)
         }
         .navigationViewStyle(.stack)
@@ -73,15 +75,15 @@ struct AddImpressionView: View {
     }
 }
 
-struct AddRecipeView_Previews: PreviewProvider {
+struct AddImpressionView_Previews: PreviewProvider {
     static var previews: some View {
-        AddRecipeView()
-            .environmentObject(RecipesViewModel())
+        AddImpressionView()
+            .environmentObject(MoviesViewModel())
         
     }
 }
-extension AddRecipeView{
-    private func saveRecipe(){
+extension AddImpressionView{
+    private func saveImpression(){
         let now=Date()
 
         let dateFormatter=DateFormatter()
@@ -89,8 +91,8 @@ extension AddRecipeView{
 
         let datePublished=dateFormatter.string(from: now)
         print(datePublished)
-        let recipe = Recipe(name: name, image: "", description: description, ingredients: ingredients, directions: directions, category:selectedCategory.rawValue, datePublished: "")
-        recipesVM.addRecipe(recipe: recipe)
+        let movie = Movie(name: name, image: "", description: description, genre: selectedGenre.rawValue, datePublished: "")
+        moviesVM.addImpression(movie: movie)
     }
 }
   
