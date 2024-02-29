@@ -5,6 +5,7 @@
 //  Created by arijesa on 28.2.24.
 //
 
+
 import SwiftUI
 
 struct MovieView: View {
@@ -32,18 +33,36 @@ struct MovieView: View {
                     .font(.largeTitle)
                     .bold()
                     .multilineTextAlignment(.center)
-                VStack(alignment: .leading, spacing: 30){
-                    if !movie.description.isEmpty{
-                        Text(movie.description){
-                            
-                        }
-                    }
+                
+                if !movie.description.isEmpty {
+                    Text(movie.description)
                         .frame(maxWidth: .infinity, alignment: .leading)
+                        .padding(.horizontal)
                 }
-                .padding(.horizontal)
             }
-            
-            .ignoresSafeArea(.container, edges: .top)
+            .padding(.top, 20)
+            .background(Color.white)
+        }
+        .navigationBarTitle(Text(""), displayMode: .inline)
+        .background(Color.white)
+    }
+}
+
+struct ShowView: View {
+    var body: some View {
+        NavigationView {
+            List(Movie.all) { movie in
+                NavigationLink(destination: MovieView(movie: movie)){
+                    VStack(alignment: .leading) {
+                        Text(movie.name)
+                            .font(.title)
+                        Text(movie.genre)
+                            .font(.subheadline)
+                            .foregroundColor(.gray)
+                    }
+                }
+            }
+            .navigationBarTitle("Movies")
         }
     }
 }
