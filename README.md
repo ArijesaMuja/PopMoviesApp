@@ -23,10 +23,10 @@ Users can add their impressions for the movies they have watched, sharing their 
 The top movies section displays an updated list of the most-watched movies by the Pop Movies community.
 
 ## Used tools:
-- Editor: XCode 15.0
-- Programming language: Swift
-- Operating System: MacOS 14.2
-
+Editor: XCode 15.0<br>
+Programming language: Swift<br>
+Operating System: MacOS 14.2<br>
+  
 #### Contributors
 Arijesa Muja<br>
 Agnesa Jashanica<br>
