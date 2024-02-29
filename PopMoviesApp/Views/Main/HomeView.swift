@@ -1,6 +1,6 @@
 import SwiftUI
 
-struct HomeView: View { @EnvironmentObject var moviesVM MoviesViewModel
+struct HomeView: View { @EnvironmentObject var moviesVM:MoviesViewModel
     var body: some View {
         NavigationView{
             ScrollView{
