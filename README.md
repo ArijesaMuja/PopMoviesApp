@@ -30,3 +30,4 @@ Operating System: MacOS 14.2
 ### Contributors
 Arijesa Muja
 Agnesa Jashanica
+
